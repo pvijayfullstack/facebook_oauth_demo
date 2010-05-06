@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Facebook OAuth Demo</title>
+    <style>img {border:none;}</style>
+</head>
+<body>
+
+<h2>Facebook OAuth Demo</h2>
+<% if @user %>
+    <p>Logged in as: <%= @user %></p>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>
