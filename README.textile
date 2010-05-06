@@ -1,6 +1,6 @@
 h1. Facebook OAuth Demo
 
-This is a "sinatra":http://github.com/bmizerany/sinatra application to demonstrate the integration of Facebook OAuth via the "facebook_auth":http://github.com/moomerman/facebook_oauth gem.
+This is a "sinatra":http://github.com/bmizerany/sinatra application to demonstrate the integration of Facebook OAuth via the "facebook_oauth":http://github.com/moomerman/facebook_oauth gem.
 
 h2. Live Demo
 

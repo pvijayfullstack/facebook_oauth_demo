@@ -1,2 +1,18 @@
 <h4>Your News Feed</h4>
 
+<% @news.each do |news| %>
+    <div>
+        <img src="http://graph.facebook.com/<%= news['from']['id'] %>/picture?type=square"/> <%= news['from']['name'] %>
+        <b><%= news['message'] %></b>
+        <% if news['comments'] %>
+            <div><ul>
+                <% news['comments']['data'].each do |comment| %>
+                <li>
+                    <img src="http://graph.facebook.com/<%= comment['from']['id'] %>/picture?type=square" width = "25" height = "25"/> <%= comment['from']['name'] %>: 
+                    <%= comment['message'] %>
+                </li>
+                <% end %>
+            </ul></div>
+        <% end %>
+    </div>
+<% end %>

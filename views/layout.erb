@@ -1,13 +1,14 @@
 <html>
 <head>
     <title>Facebook OAuth Demo</title>
-    <style>img {border:none;}</style>
+    <link href="/main.css" media="screen" rel="Stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
 
 <h2>Facebook OAuth Demo</h2>
 <% if @user %>
-    <p>Logged in as: <%= @user %></p>
+    <p>Logged in as: <%= @user %> <a href="/logout">logout</a></p>
 <% end %>
 
 <%= yield %>

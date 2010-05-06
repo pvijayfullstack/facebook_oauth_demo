@@ -35,6 +35,11 @@ get '/callback' do
 end
 
 get '/news' do
-  @news = @client.me.home
+  @news = @client.me.home['data']
   erb :news
+end
+
+get '/logout' do
+  session.delete(:user)
+  redirect '/'
 end
